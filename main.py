@@ -26,5 +26,17 @@ def main():
         else:
             print("Неправильний вибір. Спробуйте ще раз.")
 
+def add_number(numbers):
+    number = int(input("Введіть число для додавання: "))
+    if number not in numbers:
+        numbers.append(number)
+        print(f"Число {number} додано до списку.")
+    else:
+        print(f"Число {number} вже існує у списку.")
+
+
+
+
+
 
 
