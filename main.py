@@ -42,6 +42,15 @@ def remove_number(numbers):
     else:
         print(f"Число {number_to_remove} не знайдено у списку.")
 
+def show_list(numbers):
+    reverse_order = input("Вивести список у зворотньому порядку? (y/n): ")
+    if reverse_order.lower() == 'y':
+        numbers.reverse()
+        print("Список чисел:", numbers)
+
+
+
+
 
 
 
