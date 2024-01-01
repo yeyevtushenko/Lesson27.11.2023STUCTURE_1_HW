@@ -55,6 +55,24 @@ def check_value(numbers):
     else:
         print(f"Число {value_to_check} не знайдено у списку.")
 
+def replace_value(numbers):
+    value_to_replace = int(input("Введіть число, яке потрібно замінити: "))
+    new_value = int(input("Введіть нове число: "))
+    replace_all = input("Замінити всі входження? (y/n): ")
+
+    if replace_all.lower() == 'y':
+        numbers = [new_value if x == value_to_replace else x for x in numbers]
+        print(f"Всі входження числа {value_to_replace} замінено на {new_value}.")
+    else:
+        if value_to_replace in numbers:
+            index = numbers.index(value_to_replace)
+            numbers[index] = new_value
+            print(f"Перше входження числа {value_to_replace} замінено на {new_value}.")
+        else:
+            print(f"Число {value_to_replace} не знайдено у списку.")
+
+
+
 
 
 
