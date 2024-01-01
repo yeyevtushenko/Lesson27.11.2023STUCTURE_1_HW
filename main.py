@@ -34,6 +34,16 @@ def add_number(numbers):
     else:
         print(f"Число {number} вже існує у списку.")
 
+def remove_number(numbers):
+    number_to_remove = int(input("Введіть число для видалення: "))
+    if number_to_remove in numbers:
+        numbers = [x for x in numbers if x != number_to_remove]
+        print(f"Усі входження числа {number_to_remove} видалено зі списку.")
+    else:
+        print(f"Число {number_to_remove} не знайдено у списку.")
+
+
+
 
 
 
