@@ -48,6 +48,15 @@ def show_list(numbers):
         numbers.reverse()
         print("Список чисел:", numbers)
 
+def check_value(numbers):
+    value_to_check = int(input("Введіть число для перевірки: "))
+    if value_to_check in numbers:
+        print(f"Число {value_to_check} знайдено у списку.")
+    else:
+        print(f"Число {value_to_check} не знайдено у списку.")
+
+
+
 
 
 
