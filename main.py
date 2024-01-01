@@ -71,7 +71,8 @@ def replace_value(numbers):
         else:
             print(f"Число {value_to_replace} не знайдено у списку.")
 
-
+if __name__ == "__main__":
+    main()
 
 
 
